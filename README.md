@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Analytics Dashboard Hackathon Project
+
+## Overview
+
+This project is a submission for the [Hackathon Name] organized by [Organizer Name]. The goal was to build an analytics dashboard based on the provided Figma design, utilizing Next.js, Tailwind CSS, TypeScript, React-Chartjs-2, and DaisyUI.
+
+## Features
+
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+
+- **Tailwind CSS**: A utility-first CSS framework used for styling the components, providing a modern and responsive design.
+
+- **TypeScript**: A typed superset of JavaScript that enhances development with static types.
+
+- **React-Chartjs-2**: A React wrapper for Chart.js, used for creating interactive and visually appealing charts in the analytics dashboard.
+
+- **DaisyUI**: A UI component library for Tailwind CSS, used to enhance the design and user interface of the dashboard.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/analytics-dashboard.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd analytics-dashboard
+   ```
+
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+- `pages/`: Contains the Next.js pages.
+- `styles/`: Houses the Tailwind CSS configuration and global styles.
+- `components/`: Holds React components used in the project.
+- `public/`: Contains static assets.
+
+## Charts and Analytics
+
+The analytics dashboard utilizes React-Chartjs-2 to create various charts and visualizations based on the data. Explore the different charts and features available to gain insights into your data.
+
+## Design Details
+
+The project was developed based on the Figma design provided by [Sponsor Name 1] and [Sponsor Name 2]. The UI components from DaisyUI were integrated to enhance the overall design and user experience.
+
+## Sponsors
+
+This project is proudly sponsored by:
+
+- **[Sponsor Name 1]**
+  - Website: [Sponsor Website 1]
+
+- **[Sponsor Name 2]**
+  - Website: [Sponsor Website 2]
+
+## Contributing
+
+Feel free to contribute to the project by opening issues, suggesting improvements, or submitting pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Replace `[Hackathon Name]`, `[Organizer Name]`, `[Sponsor Name 1]`, `[Sponsor Name 2]`, `[Sponsor Website 1]`, `[Sponsor Website 2]` with the actual names and details of your hackathon, organizers, and sponsors. Additionally, customize the installation and usage instructions based on your project's setup.
