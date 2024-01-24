@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a submission for the [Hackathon Name] organized by [Organizer Name]. The goal was to build an analytics dashboard based on the provided Figma design, utilizing Next.js, Tailwind CSS, TypeScript, React-Chartjs-2, and DaisyUI.
+This project is a submission for the [GeePay Design and Frontend Challenge](https://www.geegpay.africa/blog/geegpay-design-and-front-end-challenge-unleash-your-creativity) organized by [Geepay Africa](https://www.geegpay.africa/blog/geegpay-design-and-front-end-challenge-unleash-your-creativity). The goal was to build an analytics dashboard based on the provided Figma design, utilizing Next.js, Tailwind CSS, TypeScript, React-Chartjs-2, and DaisyUI.
 
 ## Features
 
@@ -20,7 +20,7 @@ This project is a submission for the [Hackathon Name] organized by [Organizer Na
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/analytics-dashboard.git
+   git clone https://github.com/ESE-MONDAY/analytics-dashboard.git
 
 2. **Navigate to the Project Directory:**
    ```bash
@@ -58,19 +58,12 @@ The project was developed based on the Figma design provided by [Sponsor Name 1]
 
 This project is proudly sponsored by:
 
-- **[Sponsor Name 1]**
-  - Website: [Sponsor Website 1]
+- **GeePay Africa**
+  - [Website](https://www.geegpay.africa/)
 
-- **[Sponsor Name 2]**
-  - Website: [Sponsor Website 2]
+- **David Herbert**
+  - [Website](https://twitter.com/DaveyHert/status/1749791573825433829)
 
-## Contributing
 
-Feel free to contribute to the project by opening issues, suggesting improvements, or submitting pull requests.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Replace `[Hackathon Name]`, `[Organizer Name]`, `[Sponsor Name 1]`, `[Sponsor Name 2]`, `[Sponsor Website 1]`, `[Sponsor Website 2]` with the actual names and details of your hackathon, organizers, and sponsors. Additionally, customize the installation and usage instructions based on your project's setup.
