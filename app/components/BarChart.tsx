@@ -1,71 +1,51 @@
 'use client'
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-  } from 'chart.js';
-  import { Bar } from 'react-chartjs-2';
+import React, {useState} from 'react'
+import BarCharts from './BarCharts'
+import { data, weeklyData, yearlyData } from '@/utils';
 
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-  );
-  export const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: 'top' as const,
-    },
-    title: {
-      display: false,
-      text: ''
-    },
-  },
-  scales: {
-    y: {
-        beginAtZero: true,
-        stepSize: 5000, 
-      },
-  }
-};
+
+
   
-  const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+const BarChart = () => {
+    const [selectedView, setSelectedView] = useState('monthly');
+
+    const handleViewChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+      setSelectedView(event.target.value);
+    };
   
-export const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: [7000, 18000, 7000, 27000, 8000, 45000, 9000, 22000, 35000, 7000, 40000, 35000], 
-        backgroundColor: 'rgba(52, 202, 165, 0.10)',
-        borderRadius: 20, 
+    const getDataByView = () => {
+      switch (selectedView) {
+        case 'weekly':
+          return weeklyData;
+        case 'yearly':
+          return yearlyData;
+        default:
+          return data; // Default to the original data
       }
-    
-    ],
-  };
-
-const BarChart  = () => {
-    
-
+    };
   return (
-    <div className='w-auto bg-white border-[1px] border-[#EDF2F7] rounded-md md:rounded-2xl flex flex-col px-5 gap-5'>
-         <div className='pt-5 flex justify-between'>
-            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body '>Sales Trend</h2>
-            <h3 className='text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>See All</h3>
+    <div className='w-full bg-white border-[1px] border-[#EDF2F7] rounded-2xl'>
+          
+             <div className='w-full h-[50vh]  flex flex-col px-5 py-4 gap-5'>
+             <div className='pt-5 flex justify-between'>
+            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body '>Top Platform</h2>
+            <div className='flex gap-2 items-center'>
+            <h3 className='text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>sort by: </h3>
+            <select name="sorting" value={selectedView} onChange={handleViewChange} id="sort" className='bg-transparent py-1 px-2.5 border-[1px] border-[#E1DFDF] rounded-full'>
+                <option value="weekly" className='bg-gray-200 hover:bg-gray-300'>Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+
+            </div>
+           
              </div>
-             <div>
-             <Bar options={options} data={data} />
-             
+                
+                <BarCharts data={getDataByView()} />
              </div>
-    </div>
+         
+        </div>
   )
 }
 

@@ -1,50 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import avatar1 from '../../public/images/avatar1.png';
-import avatar2 from '../../public/images/avatar2.png';
-import avatar3 from '../../public/images/avatar3.png';
-import avatar4 from '../../public/images/avatar4.png';
-import avatar5 from '../../public/images/avatar5.png';
-import download from '../../public/images/download.png';
-
-
-const TableData =[
-    {
-        name: "Marcus Bergson",
-        image: avatar1,
-        date: "Nov 25, 2021",
-        amount: "$ 80,000",
-        status: "Paid",
-    },
-    {
-        name: "Jaydon Vaccaro",
-        image: avatar2,
-        date: "Nov 25, 2021",
-        amount: "$ 150,000",
-        status: "Refund",
-    },
-    {
-        name: "Corey Schleifer",
-        image: avatar3,
-        date: "Nov 25, 2021",
-        amount: "$ 87,000",
-        status: "Paid",
-    },
-    {
-        name: "Cooper Press",
-        image: avatar4,
-        date: "Nov 25, 2021",
-        amount: "$ 100,000",
-        status: "Refund",
-    },
-    {
-        name: "Cooper Press",
-        image: avatar5,
-        date: "Nov 25, 2021",
-        amount: "$ 78,000",
-        status: "Paid",
-    }
-]
+import { TableData } from '@/utils';
+import download from '@/public/images/download.png';
 
 const Table = () => {
   return (
