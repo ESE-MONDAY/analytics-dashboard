@@ -6,6 +6,7 @@ import BarChart from "./components/BarChart";
 import ChartGroup from "./components/ChartGroup";
 
 
+
 export default function Home() {
   const data = [20, 30, 40, 25, 50]; // Example data
   const labels = ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'];

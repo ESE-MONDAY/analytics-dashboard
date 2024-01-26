@@ -25,11 +25,11 @@ const BarChart = () => {
       }
     };
   return (
-    <div className='w-full bg-white border-[1px] border-[#EDF2F7] rounded-2xl'>
+    <div className='w-full bg-white dark:bg-[#212121] dark:border-none  border-[1px] border-[#EDF2F7]  rounded-2xl'>
           
              <div className='w-full h-[50vh]  flex flex-col px-5 py-4 gap-5'>
              <div className='pt-5 flex justify-between'>
-            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body '>Top Platform</h2>
+            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body dark:text-[#fff] '>Top Platform</h2>
             <div className='flex gap-2 items-center'>
             <h3 className='text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>sort by: </h3>
             <select name="sorting" value={selectedView} onChange={handleViewChange} id="sort" className='bg-transparent py-1 px-2.5 border-[1px] border-[#E1DFDF] rounded-full'>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const ChartGroup = () => {
   return (
-    <div className='w-full px-5 py-4 gap-5 grid grid-cols-2'>
-        <div className='col-span-1 p-4 bg-white border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
+    <div className='w-full  py-4 gap-5 grid grid-cols-1 md:grid-cols-2'>
+        <div className='col-span-1 p-4 bg-white dark:bg-[#212121] dark:border-none   border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
             <div className='flex justify-between'>
                 <div className='p-2 rounded-full border-[1px] border-[#E6E6E6]'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +27,8 @@ const ChartGroup = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-1'>
-                <h2 className='font-medium text-lg text-[#898989] font-plus-jakarta-sans'>Total Order</h2>
-                <p className='font-semibold text-2xl text-[#3A3F51] font-plus-jakarta-sans'>350</p>
+                <h2 className='font-medium text-lg text-[#898989] dark:text-[#fff] font-plus-jakarta-sans'>Total Order</h2>
+                <p className='font-semibold text-2xl text-[#3A3F51] dark:text-[#aaa]  font-plus-jakarta-sans'>350</p>
             </div>
             <div className='flex justify-between'>
                 <div className='px-2 py-1 flex gap-2 items-center bg-[#34CAA5]/10 rounded-full'>
@@ -40,13 +40,13 @@ const ChartGroup = () => {
                 </svg>
                 <p className='text-[#34CAA5] text-xs font-medium'>23.5%</p>
                 </div>
-                <p className='text-[#606060] text-sm font-normal'>vs. previous month</p>
+                <p className='text-[#606060] text-sm font-normal dark:text-[#aaa] '>vs. previous month</p>
             </div>
 
             
          </div>
 
-         <div className='col-span-1 p-4 bg-white border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
+         <div className='col-span-1 p-4 bg-white dark:bg-[#212121] dark:border-none   border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
             <div className='flex justify-between'>
                 <div className='p-2 rounded-full border-[1px] border-[#E6E6E6]'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,8 +70,8 @@ const ChartGroup = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-1'>
-                <h2 className='font-medium text-lg text-[#898989] font-plus-jakarta-sans'>Total Refund</h2>
-                <p className='font-semibold text-2xl text-[#3A3F51] font-plus-jakarta-sans'>270</p>
+                <h2 className='font-medium text-lg text-[#898989] dark:text-[#fff] font-plus-jakarta-sans'>Total Refund</h2>
+                <p className='font-semibold text-2xl text-[#3A3F51] dark:text-[#aaa] font-plus-jakarta-sans'>270</p>
             </div>
             <div className='flex justify-between'>
                 <div className='px-2 py-1 flex gap-2 items-center bg-[#ED544E]/10 rounded-full'>
@@ -83,13 +83,13 @@ const ChartGroup = () => {
                         </svg>
                 <p className='text-[#ED544E] text-xs font-medium'>23.5%</p>
                 </div>
-                <p className='text-[#606060] text-sm font-normal'>vs. previous month</p>
+                <p className='text-[#606060] text-sm font-normal dark:text-[#aaa] '>vs. previous month</p>
             </div>
 
             
             </div>
 
-            <div className='col-span-1 p-4 bg-white border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
+            <div className='col-span-1 p-4 bg-white dark:bg-[#212121] dark:border-none  border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
             <div className='flex justify-between'>
                 <div className='p-2 rounded-full border-[1px] border-[#E6E6E6]'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,8 +111,8 @@ const ChartGroup = () => {
                         </svg>
             </div>
             <div className='flex flex-col gap-1'>
-                <h2 className='font-medium text-lg text-[#898989] font-plus-jakarta-sans'>Average Sales</h2>
-                <p className='font-semibold text-2xl text-[#3A3F51] font-plus-jakarta-sans'>1537</p>
+                <h2 className='font-medium text-lg text-[#898989] dark:text-[#fff] font-plus-jakarta-sans'>Average Sales</h2>
+                <p className='font-semibold text-2xl text-[#3A3F51] dark:text-[#aaa]  font-plus-jakarta-sans'>1537</p>
             </div>
             <div className='flex justify-between'>
                 <div className='px-2 py-1 flex gap-2 items-center bg-[#ED544E]/10 rounded-full'>
@@ -124,12 +124,12 @@ const ChartGroup = () => {
                         </svg>
                 <p className='text-[#ED544E] text-xs font-medium'>23.5%</p>
                 </div>
-                <p className='text-[#606060] text-sm font-normal'>vs. previous month</p>
+                <p className='text-[#606060] text-sm font-normal dark:text-[#aaa] '>vs. previous month</p>
             </div>
 
             
             </div>
-            <div className='col-span-1 p-4 bg-white border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
+            <div className='col-span-1 p-4 bg-white dark:bg-[#212121] dark:border-none   border-[1px] flex flex-col gap-5 border-[#EDF2F7] rounded-xl '>
             <div className='flex justify-between'>
                 <div className='p-2 rounded-full border-[1px] border-[#E6E6E6]'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,8 +151,8 @@ const ChartGroup = () => {
                 </svg>
             </div>
             <div className='flex flex-col gap-1'>
-                <h2 className='font-medium text-lg text-[#898989] font-plus-jakarta-sans'>Total Income</h2>
-                <p className='font-semibold text-2xl text-[#3A3F51] font-plus-jakarta-sans'>$350.000</p>
+                <h2 className='font-medium text-lg text-[#898989] dark:text-[#fff] font-plus-jakarta-sans'>Total Income</h2>
+                <p className='font-semibold text-2xl text-[#3A3F51] dark:text-[#aaa]  font-plus-jakarta-sans'>$350.000</p>
             </div>
             <div className='flex justify-between'>
                 <div className='px-2 py-1 flex gap-2 items-center bg-[#34CAA5]/10 rounded-full'>
@@ -164,7 +164,7 @@ const ChartGroup = () => {
                 </svg>
                 <p className='text-[#34CAA5] text-xs font-medium'>23.5%</p>
                 </div>
-                <p className='text-[#606060] text-sm font-normal'>vs. previous month</p>
+                <p className='text-[#606060] dark:text-[#aaa]  text-sm font-normal'>vs. previous month</p>
             </div>
 
             
