@@ -11,10 +11,12 @@ import ProfileMenu from './ProfileMenu';
 import ThemeSwap from './ThemeSwap';
 import BellIcon from './BellIcon';
 import CalendarIcon from './CalendarIcon';
+import NotificationMenu from './NotificationMenu';
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
   const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [showNotificationMenu, setShowNotificationMenu] = useState(true);
   
 
   const toggleTheme = () => {
@@ -23,24 +25,31 @@ const Header = () => {
   return (
     <header className="py-2.5 flex justify-between w-full border-b-[1px] border-b-[#E5EAEF] dark:border-b-[#818181]">
     <div className=" px-5 flex w-full justify-between gap-[22px] ">
-      <div className="w-full gap-10 flex justify-between">
+      <div className="w-full">
         <div className="flex items-center ">
         <h1 className="font-plus-jakarta-sans hidden sm:flex text-xl font-semibold text-[#26282C] dark:text-white">MegaMind</h1>   
         <Image src={Logo} alt="Megamind Logo" width={100} height={100} className="h-8 w-8 flex sm:hidden" />
         </div>
-
-        <SearchBar />
-     
       </div>
-      <div className="hidden w-full sm:flex gap-5 items-center  ">
+      <div className='w-full '>
+      <SearchBar />
+
+      </div>
+      
+      <div className="hidden w-full sm:flex gap-5 items-center justify-end  ">
         <div className="py-2  px-4 flex gap-2.5">
           <CalendarIcon theme={theme} />
           <p className="font-plus-jakarta-sans text-sm font-normal text-[#26282C] dark:text-[#aaa] flex items-center">November 15, 2023</p>
         </div>
         <div className="py-2  px-4 flex gap-5">
-          <div className="p-2 flex justify-center items-center rounded-full border-[1px] border-[#DADDDD]">
+          <button className="p-2 flex justify-center items-center rounded-full border-[1px] border-[#DADDDD]" onClick={() => setShowNotificationMenu(!showNotificationMenu)}>
             <BellIcon theme={theme} />
-          </div>
+          </button>
+          {
+            showNotificationMenu &&(
+              <NotificationMenu setShowNotificationMenu={setShowNotificationMenu} />
+            )
+          }
           <div className="border-[1px] border-[#DADDDD] rounded-full flex gap-3 items-center py-0.5  px-2 ">
             <Image src={profile} alt="profile photo" className="h-6 w-6" />
             <div>
