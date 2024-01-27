@@ -181,5 +181,26 @@ export const TableData =[
         date: "Nov 25, 2021",
         amount: "$ 78,000",
         status: "Paid",
-    }
+    },
+    {
+      name: "Ella Harrison",
+      image: avatar2,
+      date: "Dec 10, 2021",
+      amount: "$ 120,000",
+      status: "Paid",
+  },
+  {
+      name: "Caleb Mendoza",
+      image: avatar4,
+      date: "Dec 12, 2021",
+      amount: "$ 95,000",
+      status: "Refund",
+  },
+  {
+      name: "Aria Patel",
+      image: avatar5,
+      date: "Dec 15, 2021",
+      amount: "$ 110,000",
+      status: "Paid",
+  }
 ]
