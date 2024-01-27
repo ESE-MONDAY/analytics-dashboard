@@ -13,7 +13,7 @@ export default function Home() {
 
 
   return (
-    <main className=" w-full ">
+    <main className=" w-full mb-20 sm:mb-0 ">
       <Header />
     
      <section className="p-2 md:p-5 h-auto flex flex-col lg:flex-row gap-5">

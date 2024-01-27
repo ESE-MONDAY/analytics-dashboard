@@ -27,7 +27,7 @@ const Table = () => {
                     {TableData.map((data, index)=>(
                         <tr key={index} className='border-b-[0.8px] border-[#EDF2F6] hover:bg-[#F7F8FA] dark:hover:bg-[#3d3d3d]  py-4'>
                             <td className='flex items-center gap-3.5 mt-4 pb-5'>
-                                <Image src={data.image} alt="avatar" className='w-[32px] h-[32px] rounded-full' />
+                                <Image src={data.image} alt="avatar" className='w-[32px] h-[32px] rounded-full' loading='lazy' />
                                 <h2 className='text-base whitespace-nowrap font-plus-jakarta-sans font-medium text-[#3A3F51] dark:text-slate-100   pr-12'>{data.name}</h2>
                             </td>
                             <td className='text-base whitespace-nowrap font-plus-jakarta-sans font-normal text-neutral dark:text-[#aaa] pr-8'>{data.date}</td>
