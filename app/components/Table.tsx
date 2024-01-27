@@ -2,11 +2,19 @@
 import React, {useState} from 'react'
 import Image from 'next/image';
 import { TableData } from '@/utils';
-import download from '@/public/images/download.png';
+import DownloadIcon from './DownloadIcon';
+import DownloadModal from './DownloadModal';
 
 
 const Table = () => {
   const [showAll, setShowAll] = useState(false);
+  const [downloadModal, setDownloadModal] = useState(false);
+  const [data, setData] = useState(TableData);
+
+  const showModal = (data: any) => {
+    setData(data);
+    setDownloadModal(true);
+  }
   return (
     <div className='w-auto bg-white dark:bg-[#212121] border-[1px] border-[#EDF2F7] dark:border-none rounded-md md:rounded-2xl flex flex-col p-5 gap-5'>
         <div className='pt-5 flex justify-between'>
@@ -35,7 +43,7 @@ const Table = () => {
                             <td className='text-base whitespace-nowrap font-plus-jakarta-sans font-normal text-neutral dark:text-[#aaa] pr-8'>{data.date}</td>
                             <td className='text-base whitespace-nowrap font-plus-jakarta-sans font-medium text-mainColor-secondary dark:text-slate-100 pr-8'>{data.amount}</td>
                             <td className={`text-base font-normal font-plus-jakarta-sans pr-8 ${data.status === "Paid" ? "text-mainColor-paid" : " text-mainColor-refund"}`}>{data.status}</td>
-                            <td className='text-sm font-plus-jakarta-sans font-normal text-mainColor-secondary dark:text-[#34CAA5]'> <button className='flex justify-center items-center gap-1 '> <Image src={download} className='w-[12px] h-[12px]' alt='download icon' /> View</button></td>
+                            <td className='text-sm font-plus-jakarta-sans font-normal text-mainColor-secondary dark:text-[#34CAA5]'> <button className='flex justify-center items-center gap-1 ' onClick={() => showModal(data)}> <DownloadIcon/> View</button></td>
                         </tr>
                     ))}
                     {
@@ -48,7 +56,7 @@ const Table = () => {
                           <td className='text-base whitespace-nowrap font-plus-jakarta-sans font-normal text-neutral dark:text-[#aaa] pr-8'>{data.date}</td>
                           <td className='text-base whitespace-nowrap font-plus-jakarta-sans font-medium text-mainColor-secondary dark:text-slate-100 pr-8'>{data.amount}</td>
                           <td className={`text-base font-normal font-plus-jakarta-sans pr-8 ${data.status === "Paid" ? "text-mainColor-paid" : " text-mainColor-refund"}`}>{data.status}</td>
-                          <td className='text-sm font-plus-jakarta-sans font-normal text-mainColor-secondary dark:text-[#34CAA5]'> <button className='flex justify-center items-center gap-1 '> <Image src={download} className='w-[12px] h-[12px]' alt='download icon' /> View</button></td>
+                          <td className='text-sm font-plus-jakarta-sans font-normal text-mainColor-secondary dark:text-[#34CAA5]'> <button className='flex justify-center items-center gap-1 ' onClick={() => showModal(data)}> <DownloadIcon/> View</button></td>
                       </tr>
 
                         ))
@@ -58,6 +66,10 @@ const Table = () => {
                 </table>
 
         </div>
+        {
+          downloadModal && <DownloadModal setDownloadModal={setDownloadModal} data={data} />
+        }
+
        
         
 

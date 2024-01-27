@@ -1,6 +1,6 @@
 'use client'
 import React, {useState, useEffect} from 'react'
-import { useTheme } from 'next-themes';
+
 
 
 
@@ -22,8 +22,6 @@ const BellIcon = ({theme}:any) => {
         // Update the icon JSX based on the theme change
         setThemeIcon(theme === 'light' ? lightIcon : darkIcon);
       }, [theme]);
-
-      
   return (
     <>
     {themeIcon}

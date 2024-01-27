@@ -25,7 +25,7 @@ const BarChart = () => {
       }
     };
   return (
-    <div className='w-full bg-white dark:bg-[#212121] dark:border-none  border-[1px] border-[#EDF2F7]  rounded-2xl'>
+    <div className='w-full bg-white dark:bg-[#212121] dark:border-none  border-[1px] border-[#EDF2F7] overflow-x-auto   rounded-2xl'>
           
              <div className='w-full h-[60vh]  flex flex-col px-2 sm:px-5 py-4 gap-3 sm:gap-5'>
              <div className='pt-5 flex justify-between'>
@@ -41,8 +41,11 @@ const BarChart = () => {
             </div>
            
              </div>
+             
+              <BarCharts data={getDataByView()} />
+            
                
-                <BarCharts data={getDataByView()} />
+                
              </div>
          
         </div>

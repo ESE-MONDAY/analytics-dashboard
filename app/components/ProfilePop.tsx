@@ -1,41 +1,17 @@
-'use client'
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image';
 import { IoCloseOutline } from "react-icons/io5";
-import profile from '../../public/images/profile.png'
-import ThemeSwap from './ThemeSwap';
+import Link from 'next/link';
 
-const ProfileMenu = ({setShowProfileMenu, theme,toggleTheme }: any) => {
-
-    
+const ProfilePop = ({setShowProfilePopUp}:any) => {
   return (
-    <div className='fixed top-0 left-0 h-screen w-full z-40 bg-white dark:bg-[#212121] p-4'>
-      <div className='flex justify-between'>
-      <div className='flex gap-8 items-center px-4 '>
-      <button onClick={() => setShowProfileMenu(false)}>
-      <IoCloseOutline size={24} />
-      </button>
-      <h3 className='text-mainColor-secondary dark:text-slate-100 '>Account</h3>
-    </div>
-    <ThemeSwap theme={theme} toggleTheme={toggleTheme} />
-
-      </div>
-
-  
-    <div className='px-4 py-2 mt-4  flex gap-4 border-b-[1px] border-b-[#E5EAEF] dark:border-b-[#818181] '>
-    <Image src={profile} alt="profile photo" className="h-14 w-14" loading='lazy' />
-    <div className="py-0.5  px-2 ">
-    <div className='items-center  '>
-      <p className='text-xs font-medium text-mainColor-secondary dark:text-slate-100 '>Justin Bergson</p>
-      <p className='text-xs font-light text-mainColor-secondary dark:text-slate-100 mt-1'>Justin@gmail.com</p>
-    </div>
-    <p className='text-sm font-medium whitespace-nowrap mt-2 text-[#34CAA5]' >Manage your Megamind Account</p>
-  
-  </div>
- 
-    </div>
-    <div className='flex flex-col  mt-4' >
+    <div className='fixed top-8 md:top-20 md:right-10 bg-white z-40 dark:bg-[#212121] px-4 py-2 w-80 rounded-md'>
+                 <div className='flex gap-8 items-center justify-between border-b-[1px] border-b-[#E5EAEF] dark:border-b-[#818181] py-2'>
+                    <h3 className='text-mainColor-secondary dark:text-slate-100 '>Profile</h3>
+                    <button onClick={() => setShowProfilePopUp(false)}>
+                    <IoCloseOutline size={18} />
+                    </button>
+                  </div>
+                  <div className='flex flex-col  mt-4' >
      {/* Icon 1 */}
 <Link href="/" className="flex p-2.5 items-center gap-8 ">
      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,9 +44,8 @@ const ProfileMenu = ({setShowProfileMenu, theme,toggleTheme }: any) => {
 
 
     </div>
-    
-  </div>
+              </div>
   )
 }
 
-export default ProfileMenu;
+export default ProfilePop
