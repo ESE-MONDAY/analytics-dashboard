@@ -8,8 +8,8 @@ const Table = () => {
   return (
     <div className='w-auto bg-white dark:bg-[#212121] border-[1px] border-[#EDF2F7] dark:border-none rounded-md md:rounded-2xl flex flex-col p-5 gap-5'>
         <div className='pt-5 flex justify-between'>
-            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body dark:text-[#fff] '>Last Orders</h2>
-            <h3 className='text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>See All</h3>
+            <h2 className='text-sm sm:text-base font-semibold font-plus-jakarta-sans text-body dark:text-[#fff] '>Last Orders</h2>
+            <h3 className='text-sm sm:text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>See All</h3>
         </div>
         <div className=' overflow-x-auto'>
         <table className='w-full '>

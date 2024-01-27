@@ -27,21 +27,21 @@ const BarChart = () => {
   return (
     <div className='w-full bg-white dark:bg-[#212121] dark:border-none  border-[1px] border-[#EDF2F7]  rounded-2xl'>
           
-             <div className='w-full h-[50vh]  flex flex-col px-5 py-4 gap-5'>
+             <div className='w-full h-[60vh]  flex flex-col px-2 sm:px-5 py-4 gap-3 sm:gap-5'>
              <div className='pt-5 flex justify-between'>
-            <h2 className='text-base font-semibold font-plus-jakarta-sans text-body dark:text-[#fff] '>Top Platform</h2>
+            <h2 className='text-sm sm:text-base font-semibold font-plus-jakarta-sans text-body dark:text-[#fff] '>Top Platform</h2>
             <div className='flex gap-2 items-center'>
-            <h3 className='text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>sort by: </h3>
+            <h3 className='text-sm sm:text-base font-medium font-plus-jakarta-sans text-mainColor-paid '>sort by: </h3>
             <select name="sorting" value={selectedView} onChange={handleViewChange} id="sort" className='bg-transparent py-1 px-2.5 border-[1px] border-[#E1DFDF] rounded-full'>
-                <option value="weekly" className='bg-gray-200 hover:bg-gray-300'>Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="yearly">Yearly</option>
+                <option value="weekly" className='bg-gray-200 text-xs sm:text-base hover:bg-gray-300 px-4'>Weekly</option>
+                <option value="monthly" className='bg-gray-200 text-xs sm:text-base hover:bg-gray-300 px-4'>Monthly</option>
+                <option value="yearly" className='bg-gray-200 text-xs sm:text-base hover:bg-gray-300 px-4'>Yearly</option>
             </select>
 
             </div>
            
              </div>
-                
+               
                 <BarCharts data={getDataByView()} />
              </div>
          

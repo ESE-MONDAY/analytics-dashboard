@@ -57,10 +57,36 @@ export const data = [
     },
   ];
 
-    export const weeklyData = Array.from({ length: 8 }, (_, index) => ({
-        name: `Week ${index + 1}`,
-        value: Math.floor(Math.random() * 2000) + 5000, // Generate random values for demonstration
-    }));
+    export const weeklyData = [
+        {
+          name: 'Mon',
+          value: 7000,
+        },
+        {
+          name: 'Tue',
+          value: 18000,
+        },
+        {
+          name: 'Wed',
+          value: 7000,
+        },
+        {
+          name: 'Thu',
+          value: 27000,
+        },
+        {
+          name: 'Fri',
+          value: 8000,
+        },
+        {
+          name: 'Sat',
+          value: 4000,
+        },
+        {
+          name: 'Sun',
+          value: 9000,
+        },
+    ]
     
     
     export const yearlyData = Array.from({ length: 8 }, (_, index) => ({
@@ -89,8 +115,33 @@ export const data = [
           percentage: "+8%",
           color: "#FFB74A"
       },
-     
+      {
+          name: "Fashion Fusion",
+          amount: "$ 2,500,000",
+          percentage: "+12%",
+          color: "#F06292"
+      },
+      {
+          name: "Tech Temple",
+          amount: "$ 1,600,000",
+          percentage: "+6%",
+          color: "#4CAF50"
+      },
+      {
+          name: "Gourmet Grove",
+          amount: "$ 2,200,000",
+          percentage: "+15%",
+          color: "#FF8A65"
+      },
+      {
+          name: "Pet Paradise",
+          amount: "$ 900,000",
+          percentage: "+5%",
+          color: "#AED581"
+      }
+      
   ]
+
 
 
 
