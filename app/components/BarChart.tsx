@@ -21,7 +21,7 @@ const BarChart = () => {
         case 'yearly':
           return yearlyData;
         default:
-          return data; // Default to the original data
+          return data; 
       }
     };
   return (
