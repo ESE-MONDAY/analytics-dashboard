@@ -4,14 +4,13 @@ import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import Link from "next/link";
 import ThemeSwitch from './ThemeSwitch';
-import { useShowSidebar } from '../providers'
+
 
 
 const SideBar = () => {
-  const { showSidebar, toggleSidebar } = useShowSidebar();
   return (
         <aside className="py-5 px-2.5 hidden   h-auto bg-[#F7F8FA] md:flex dark:bg-transparent border-r-[1px] border-r-[#EBECF2] dark:border-r-[#818181] flex-col gap-5  ">
-        <button className=" p-2.5  " onClick={toggleSidebar}>
+        <button className=" p-2.5  " >
         <Image src={Logo} alt="Megamind Logo" width={100} height={100} className="h-10 w-10" />
         </button>
         {/* Navigation Icon */}

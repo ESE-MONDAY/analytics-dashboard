@@ -3,12 +3,9 @@ import React, {useState} from 'react'
 import SearchBar from './Search'
 import profile from '../../public/images/profile.png'
 import Image from "next/image";
-import Link from 'next/link';
 import Logo from "@/public/images/logo.png";
 import { useTheme } from 'next-themes';
-import { IoCloseOutline } from "react-icons/io5";
 import ProfileMenu from './ProfileMenu';
-import ThemeSwap from './ThemeSwap';
 import BellIcon from './BellIcon';
 import CalendarIcon from './CalendarIcon';
 import NotificationMenu from './NotificationMenu';
