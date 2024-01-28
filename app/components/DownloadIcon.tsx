@@ -1,8 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react'
 import { useTheme } from 'next-themes';
-import download from '@/public/images/download.png';
-import darkdownloadicon from '@/public/images/darkdownloadicon.png';
+
 
 
 
